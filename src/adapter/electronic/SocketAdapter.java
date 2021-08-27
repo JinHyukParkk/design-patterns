@@ -1,4 +1,4 @@
-package adapter;
+package adapter.electronic;
 
 public class SocketAdapter implements Electronic110V {
 

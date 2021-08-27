@@ -1,4 +1,4 @@
-package adapter;
+package adapter.electronic;
 
 public class Main {
     public static void main(String[] args) {

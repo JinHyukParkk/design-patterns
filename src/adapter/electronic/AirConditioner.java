@@ -1,4 +1,4 @@
-package adapter;
+package adapter.electronic;
 
 public class AirConditioner implements Electronic220V{
     @Override
