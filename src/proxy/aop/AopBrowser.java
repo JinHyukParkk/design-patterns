@@ -1,7 +1,7 @@
-package aop;
+package proxy.aop;
 
-import proxy.Html;
-import proxy.IBrowser;
+import proxy.browser.Html;
+import proxy.browser.IBrowser;
 
 public class AopBrowser implements IBrowser {
 

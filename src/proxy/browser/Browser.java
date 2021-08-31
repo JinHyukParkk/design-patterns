@@ -1,4 +1,4 @@
-package proxy;
+package proxy.browser;
 
 public class Browser implements IBrowser {
 

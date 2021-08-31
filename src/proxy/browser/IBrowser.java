@@ -1,4 +1,4 @@
-package proxy;
+package proxy.browser;
 
 public interface IBrowser {
     Html show();

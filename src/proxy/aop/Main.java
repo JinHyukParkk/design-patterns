@@ -1,6 +1,6 @@
-package aop;
+package proxy.aop;
 
-import proxy.IBrowser;
+import proxy.browser.IBrowser;
 
 import java.util.concurrent.atomic.AtomicLong;
 
