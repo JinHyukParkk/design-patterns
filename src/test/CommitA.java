@@ -1,7 +1,18 @@
 package test;
 
 public class CommitA {
-    public static void main(String[] args) {
 
+    private int value;
+
+    public CommitA(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 }
