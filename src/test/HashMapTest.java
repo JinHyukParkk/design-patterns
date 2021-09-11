@@ -1,6 +1,7 @@
 package test;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapTest {
 
@@ -23,15 +24,23 @@ public class HashMapTest {
         commitA.setValue(2);
         System.out.println(commitA);
         System.out.println(hashMap.get(commitA));
+        hashMap.put(commitA, 3);
 
         // 객체 변경 - 레퍼런스 객체이기 때문에 값 달라짐
         commitA = new CommitA(2);
         System.out.println(commitA);
         System.out.println(hashMap.get(commitA));
+        hashMap.put(commitA, 4);
 
         // 이전 객체 값과 동일하게 만들어도 새로운 객체임
         commitA = new CommitA(1);
         System.out.println(commitA);
         System.out.println(hashMap.get(commitA));
+        hashMap.put(commitA, 5);
+
+
+        for (Map.Entry<CommitA, Integer> entry : hashMap.entrySet()) {
+            System.out.println("Key:" + entry.getKey());
+        }
     }
 }
