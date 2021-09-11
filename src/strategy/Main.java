@@ -3,30 +3,20 @@ package strategy;
 public class Main {
 
     public static void main(String[] args) {
-        Encoder encoder = new Encoder();
-
-        // base64
-        EncodingStrategy base64 = new Base64Strategy();
-
-        // normal
-        EncodingStrategy normal = new NormalStrategy();
-
-        // append
-        EncodingStrategy append = new AppendStrategy();
-
         String message = "hello java";
 
-        encoder.setEncodingStrategy(base64);
-        String base64Result = encoder.getMessage(message);
+        Tool gomTool = new GomTool("GOM");
+
+        gomTool.setEncodingStrategy(new Base64Strategy());
+        String base64Result = gomTool.getEncodingStrategy().encode(message);
         System.out.println(base64Result);
 
-        encoder.setEncodingStrategy(normal);
-        String normalResult = encoder.getMessage(message);
+        gomTool.setEncodingStrategy(new NormalStrategy());
+        String normalResult = gomTool.getEncodingStrategy().encode(message);
         System.out.println(normalResult);
 
-        encoder.setEncodingStrategy(append);
-        String appendResult = encoder.getMessage(message);
+        gomTool.setEncodingStrategy(new AppendStrategy());
+        String appendResult = gomTool.getEncodingStrategy().encode(message);
         System.out.println(appendResult);
-
     }
 }
