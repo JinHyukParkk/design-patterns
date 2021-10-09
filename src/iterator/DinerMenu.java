@@ -1,5 +1,8 @@
 package iterator;
 
+import java.util.Arrays;
+import java.util.Iterator;
+
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
@@ -41,10 +44,9 @@ public class DinerMenu implements Menu {
     }
 
     public Iterator createIterator() {
-        return new DinerMenuIterator(menuItems);
-        // To test Alternating menu items, comment out above line,
-        // and uncomment the line below.
-        //return new AlternatingDinerMenuIterator(menuItems);
+//        return new DinerMenuIterator(menuItems);
+
+        return Arrays.stream(menuItems).iterator();
     }
 
     // other menu methods here

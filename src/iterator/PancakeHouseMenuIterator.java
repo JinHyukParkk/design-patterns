@@ -1,6 +1,7 @@
 package iterator;
 
 import java.util.List;
+import java.util.Iterator;
 
 public class PancakeHouseMenuIterator implements Iterator {
     List<MenuItem> items;
