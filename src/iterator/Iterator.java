@@ -7,5 +7,3 @@ public interface Iterator {
     // 다음 객체 리턴
     MenuItem next();
 }
-
-//
