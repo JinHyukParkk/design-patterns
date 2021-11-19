@@ -1,4 +1,4 @@
-package strategy;
+package strategy.encoder;
 
 public interface EncodingStrategy {
 
