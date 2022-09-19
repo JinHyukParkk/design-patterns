@@ -1,19 +1,28 @@
-package command;
+package templatemethod.bank;
 
 public class Customer {
 
-    Waitress waitress;
-    Order order;
+    int id;
 
-    public Customer(Waitress waitress) {
-        this.waitress = waitress;
-    }
+    String name;
 
-    public void createOrder(Order order) {
+    String order;
+
+    public Customer(int id, String name, String order) {
+        this.id = id;
+        this.name = name;
         this.order = order;
     }
 
-    public void hungry() {
-        waitress.takeOrder(order);
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getOrder() {
+        return order;
     }
 }
