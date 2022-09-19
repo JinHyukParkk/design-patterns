@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.cafe;
 
 public class Tea extends CaffeineBeverage {
 

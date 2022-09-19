@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.cafe;
 
 public abstract class CaffeineBeverageWithHook {
     final void prepareRecipe() {

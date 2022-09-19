@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.cafe;
 
 public class Coffee extends CaffeineBeverage {
     @Override

@@ -1,4 +1,4 @@
-package templatemethod;
+package templatemethod.cafe;
 
 import java.io.BufferedReader;
 import java.io.IOException;
